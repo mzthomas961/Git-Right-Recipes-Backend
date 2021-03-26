@@ -4,8 +4,6 @@ d1 = Diet.create(name: "Vegetarian", description: "Vegetarian meals do not conta
 #User
 u1 = User.create(name: "Milo", password: "Milo123", image:"https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/104209251_10104193109362184_4188311370884100240_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=UTzEfZSepWEAX8i7XWP&_nc_ht=scontent-lga3-2.xx&oh=6bb762579306971815ff992d950b4780&oe=60818F9E")
 
-#RecipeDiet
-rd1 = RecipeDiet.create(recipe_id: 1, diet_id: 1)
 
 # Recipe
 r1 = Recipe.create(name: "Vegetable Soup", image: "https://images.themodernproper.com/billowy-turkey/production/posts/2020/Vegetable-Soup-8.jpg?w=667&auto=compress%2Cformat&fit=crop&fp-x=0.5&fp-y=0.5&dm=1600877034&s=3cd2c2ede393325fb4b39768142d6dc3", ingredients: " olive oil, celery, onion, vegetables, herbs and spices, stock, canned tomatoes x2, salt", instructions: "1. Sauté onions and celery until fragrant and translucent. Take your time—remember, this is where your real flavor begins.
@@ -16,6 +14,9 @@ r1 = Recipe.create(name: "Vegetable Soup", image: "https://images.themodernprope
 
 # Preference
 p1 = Preference.create(user_id: 1, diet_id: 1, restriction: "none")
+
+#RecipeDiet
+rd1 = RecipeDiet.create(recipe_id: 1, diet_id: 1)
 
 
 puts "Let's get some recipes 🔥🔥🔥🔥🔥!"
