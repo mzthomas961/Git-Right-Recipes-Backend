@@ -1,4 +1,4 @@
 class Preference < ApplicationRecord
-  belongs_to :User
-  belongs_to :Diet
+  belongs_to :user
+  belongs_to :diet
 end
