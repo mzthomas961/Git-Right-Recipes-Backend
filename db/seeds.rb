@@ -17,6 +17,7 @@ p1 = Preference.create(user_id: 1, diet_id: 1, restriction: "none")
 
 #RecipeDiet
 rd1 = RecipeDiet.create(recipe_id: 1, diet_id: 1)
+    
 
 
 puts "Let's get some recipes 🔥🔥🔥🔥🔥!"
