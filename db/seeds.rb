@@ -25,6 +25,12 @@ instructions:"
 5. Eat up!", 
 breakfast:false, lunch:true, dinner:true, snack:false, dessert:false)
 
+r3=Recipe.create(name:"Vegan Roasted Sweet Potato Salad", image: "https://images.themodernproper.com/billowy-turkey/production/posts/2019/Vegan-Roasted-Sweet-Potato-Salad-5.jpg?w=1200&auto=compress%2Cformat&fit=crop&fp-x=0.5&fp-y=0.5&dm=1599768722&s=15424cd57c44d2f2768653a2326996ce", ingredients: "1/2cup Cilantro, 3 Garlic Cloves, 1/2tbsp Sea salt, 3 tbsp Olive Oil, 3/4 cup Water, 1/2 Jalapeno, seeded, 1/2 Avocado", instructions: "1. Preheat oven at 400°F.
+    2. Cut sweet potatoes into 2 inch cubes. In a large bowl, toss the sweet potatoes with olive oil and taco seasoning. Arrange on a baking sheet, careful not to overcrowd. Roast on the center rack in oven for 30 minutes, flipping the sweet potatoes half way through. (If sweet potatoes aren't tender enough, cook for an additional 5 minutes.)
+    3. In a high-powered blender, blend all ingredients for the dressing. You should end up with about 1 ¼ cups of the vegan cilantro-lime dressing.
+    *For a thinner dressing, add a little more lime juice.
+    4. In a large bowl, toss the kale, cilantro, green onions, black beans, roasted sweet potatoes, avocado, with desired amount of dressing. Enjoy!", breakfast: false , lunch:true , dinner: true , snack: false, dessert: false)
+
 # Preference
 p1 = Preference.create(user_id: 1, diet_id: 1, restriction: "none")
 p2 = Preference.create(user_id:2, diet_id: 3, restriction: "peanuts")
