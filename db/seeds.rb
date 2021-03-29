@@ -6,7 +6,7 @@ d3=Diet.create(name:"Paleo", description:"Allowed ingredients include meat (espe
 
 #User
 u1 = User.create(name: "Scout", password: "Scout123", image: "https://i.pinimg.com/474x/8b/c0/95/8bc0959b121dac853564de8856ebf999.jpg")
-u2 =User.create(name:"Kenny".password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
+u2 =User.create(name:"Kenny",password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
 
 
 # Recipe
@@ -25,11 +25,22 @@ instructions:"
 5. Eat up!", 
 breakfast:false, lunch:true, dinner:true, snack:false, dessert:false)
 
-r3=Recipe.create(name:"Vegan Roasted Sweet Potato Salad", image: "https://images.themodernproper.com/billowy-turkey/production/posts/2019/Vegan-Roasted-Sweet-Potato-Salad-5.jpg?w=1200&auto=compress%2Cformat&fit=crop&fp-x=0.5&fp-y=0.5&dm=1599768722&s=15424cd57c44d2f2768653a2326996ce", ingredients: "1/2cup Cilantro, 3 Garlic Cloves, 1/2tbsp Sea salt, 3 tbsp Olive Oil, 3/4 cup Water, 1/2 Jalapeno, seeded, 1/2 Avocado", instructions: "1. Preheat oven at 400°F.
+r3 = Recipe.create(name:"Vegan Roasted Sweet Potato Salad", image: "https://images.themodernproper.com/billowy-turkey/production/posts/2019/Vegan-Roasted-Sweet-Potato-Salad-5.jpg?w=1200&auto=compress%2Cformat&fit=crop&fp-x=0.5&fp-y=0.5&dm=1599768722&s=15424cd57c44d2f2768653a2326996ce", ingredients: "1/2cup Cilantro, 3 Garlic Cloves, 1/2tbsp Sea salt, 3 tbsp Olive Oil, 3/4 cup Water, 1/2 Jalapeno, seeded, 1/2 Avocado", instructions: "1. Preheat oven at 400°F.
     2. Cut sweet potatoes into 2 inch cubes. In a large bowl, toss the sweet potatoes with olive oil and taco seasoning. Arrange on a baking sheet, careful not to overcrowd. Roast on the center rack in oven for 30 minutes, flipping the sweet potatoes half way through. (If sweet potatoes aren't tender enough, cook for an additional 5 minutes.)
     3. In a high-powered blender, blend all ingredients for the dressing. You should end up with about 1 ¼ cups of the vegan cilantro-lime dressing.
     *For a thinner dressing, add a little more lime juice.
     4. In a large bowl, toss the kale, cilantro, green onions, black beans, roasted sweet potatoes, avocado, with desired amount of dressing. Enjoy!", breakfast: false , lunch:true , dinner: true , snack: false, dessert: false)
+
+r4 = Recipe.create(name: "Zucchini Fritters", image: "https://www.justataste.com/wp-content/uploads/2015/07/5-ingredient-zucchini-fritters-recipe-1-580x875.jpg", ingredients: "1 1/2 pounds zucchini, grated (about 3 cups)
+1 teaspoon salt
+1/4 cup all-purpose flour
+1/4 cup grated Parmesan
+2 cloves garlic, minced
+1 large egg, beaten
+Kosher salt and freshly ground black pepper, to taste
+2 tablespoons olive oil", instructions: "1. Place grated zucchini in a colander over the sink. Add salt and gently toss to combine; let sit for 10 minutes. Using a clean dish towel or cheese cloth, drain zucchini completely. 2. In a large bowl, combine zucchini, flour, Parmesan, garlic and egg; season with salt and pepper, to taste.
+3. Heat olive oil in a large skillet over medium high heat. Scoop tablespoons of batter for each fritter, flattening with a spatula, and cook until the underside is nicely golden brown, about 2 minutes. Flip and cook on the other side, about 1-2 minutes longer.
+4. Serve immediately.", breakfast: false, lunch: true, dinner: true, snack: true, dessert: false)
 
 # Preference
 p1 = Preference.create(user_id: 1, diet_id: 1, restriction: "none")
@@ -37,6 +48,9 @@ p2 = Preference.create(user_id:2, diet_id: 3, restriction: "peanuts")
 
 #RecipeDiet
 rd1 = RecipeDiet.create(recipe_id: 1, diet_id: 1)
+rd2 = RecipeDiet.create(recipe_id: 4, diet_id: 1)
+rd2 = RecipeDiet.create(recipe_id: 3, diet_id: 2)
+rd4 = RecipeDiet.create(recipe_id: 2, diet_id: 1)
     
 
 
