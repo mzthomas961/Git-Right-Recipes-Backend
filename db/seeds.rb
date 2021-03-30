@@ -1,12 +1,12 @@
 # Diets
 d1 = Diet.create(name: "Vegetarian", description: "Vegetarian meals do not contain fish, meat, or chicken.", image: "https://media.istockphoto.com/photos/bowl-dish-with-brown-rice-cucumber-tomato-green-peas-red-cabbage-picture-id1047798504?k=6&m=1047798504&s=612x612&w=0&h=SqHh8UZas82kGOifausDLjh5WcJRT4T4pFtBNB-BVg4=")
-d2=Diet.create(name:"Vegan", description: "No ingredients may contain meat or meat by-products, such as bones or gelatin, nor may they contain eggs, dairy, or honey. ", image:"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/satay-sweet-potato-curry_1-710fb3f.jpg?quality=90&resize=960,872")
-d3=Diet.create(name:"Paleo", description:"Allowed ingredients include meat (especially grass fed), fish, eggs, vegetables, some oils (e.g. coconut and olive oil), and in smaller quantities, fruit, nuts, and sweet potatoes. We also allow honey and maple syrup. Ingredients not allowed include legumes (e.g. beans and lentils), grains, dairy, refined sugar, and processed foods.", image:"https://images.everydayhealth.com/images/diet-nutrition/paleo-diet/can-a-paleo-diet-treat-uc-1440x810.jpg?sfvrsn=aa69fdba_0")
+d2 = Diet.create(name:"Vegan", description: "No ingredients may contain meat or meat by-products, such as bones or gelatin, nor may they contain eggs, dairy, or honey. ", image:"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/satay-sweet-potato-curry_1-710fb3f.jpg?quality=90&resize=960,872")
+d3 = Diet.create(name:"Paleo", description:"Allowed ingredients include meat (especially grass fed), fish, eggs, vegetables, some oils (e.g. coconut and olive oil), and in smaller quantities, fruit, nuts, and sweet potatoes. We also allow honey and maple syrup. Ingredients not allowed include legumes (e.g. beans and lentils), grains, dairy, refined sugar, and processed foods.", image:"https://images.everydayhealth.com/images/diet-nutrition/paleo-diet/can-a-paleo-diet-treat-uc-1440x810.jpg?sfvrsn=aa69fdba_0")
 
 
 #User
 u1 = User.create(name: "Scout", password: "Scout123", image: "https://i.pinimg.com/474x/8b/c0/95/8bc0959b121dac853564de8856ebf999.jpg")
-u2 =User.create(name:"Kenny",password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
+u2 = User.create(name:"Kenny",password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
 
 
 # Recipe
