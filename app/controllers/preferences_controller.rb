@@ -40,6 +40,6 @@ class PreferencesController < ApplicationController
     private
 
     def preference_params
-        params.permit(:user_id, :user_id, :restriction)
+        params.permit(:user_id, :diet_id, :restriction)
     end
 end
