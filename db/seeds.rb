@@ -6,7 +6,7 @@ d3 = Diet.create(name:"Paleo", description:"Allowed ingredients include meat (es
 
 #User
 u1 = User.create(name: "Scout", password: "Scout123", image: "https://i.pinimg.com/474x/8b/c0/95/8bc0959b121dac853564de8856ebf999.jpg")
-u2 = User.create(name:"Kenny",password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
+# u2 = User.create(name:"Kenny",password:"Kenny123", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DQHd3e20lb4KV3SFqATpULx9sER4QWo5Aw&usqp=CAU")
 
 
 # Recipe
